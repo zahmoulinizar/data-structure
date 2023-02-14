@@ -1,0 +1,15 @@
+ALGORITHM algorithm_name
+VAR
+    sum : INTEGER:= 0;
+    set1 : array_name : ARRAY_OF integer[1,2,3,5,7,8];
+    set2 : array_name : ARRAY_OF type[5,4,6,7]; 
+BEGIN
+  FOR i FROM 0 TO set1.length step 1 DO
+    FOR j FROM 0 TO set2.length step 1  DO
+     IF (set1[i]<>set2[j]) THEN
+        sum=set1[i]+set2[j];
+     END_IF
+    END_FOR
+  END_FOR
+    Write(sum);
+END
